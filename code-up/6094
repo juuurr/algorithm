@@ -1,0 +1,5 @@
+n = int(input())
+lis = input().split()
+lis = list(map(int, lis))
+liss = sorted(lis)
+print(liss[0])
