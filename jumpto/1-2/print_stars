@@ -1,0 +1,25 @@
+#1
+n, w = map(int, input().split())
+a = n//w
+b = n%w
+
+for _ in range(a):
+  print('*'*w, end = '')
+  print()
+print('*'*b)
+
+
+#2
+
+
+
+
+#3
+n, w = map(int, input().split())
+
+for _ in range(n//w):
+  print('*' * w)
+
+rest = n%w
+if rest:
+  print('*'*rest)
