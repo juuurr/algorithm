@@ -6,7 +6,7 @@ S[i] = S[i-1] + A[i]
 구간합 ; S[j]-S[i-1] ; i에서 j까지 구간 합
 ```
 
-
+#방법1
 
 #입력값 받기
 N, M = map(int, input().split())
@@ -37,3 +37,28 @@ for idx in range(M):
     print(sum_arr[j])
   else:
     print(sum_arr[j] - sum_arr[i-1])
+
+
+
+
+#방법2
+import sys
+input = sys.stdin.readline
+
+N, M = map(int, input().split())
+num_arr = list(map(int, input().split()))
+
+sum_arr = [0] #index 조절
+summ = 0 #초기값
+for i in num_arr:
+  summ += i
+  sum_arr.append(summ)
+
+#i,j 받고 출력
+for m in range(M):
+    i, j = map(int, input().split())
+    print(sum_arr[j] - sum_arr[i-1])
+
+
+
+
