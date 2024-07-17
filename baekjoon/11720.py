@@ -1,0 +1,7 @@
+N = int(input())
+N_str = input()
+summ = 0
+    
+for i in range(N):
+    summ += int(N_str[i])
+print(summ)
