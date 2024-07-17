@@ -26,7 +26,7 @@ print(cnt)
 
 
 
-#시간 초과 코드
+#hidden case 고려 x
 import sys
 input = sys.stdin.readline
 
@@ -48,7 +48,7 @@ while s_idx < e_idx:
     s_idx += 1
     e_idx -= 1
   elif summ > M:
-    pass
+    pass #hidden case 고려하지 못함
   else:
     s_idx += 1
 
